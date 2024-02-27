@@ -1,0 +1,89 @@
+{
+  "navbar": {
+    "menu": [
+      {
+        "item": "About me",
+        "id": "about-me"
+      },
+      {
+        "item": "Experience",
+        "id": "experience__jobs"
+      },
+      {
+        "item": "Projects",
+        "id": "projects"
+      },
+      {
+        "item": "Contact",
+        "id": "contact"
+      }
+    ],
+    "button": "Resume"
+  },
+  "banner": {
+    "pretitle": "Hello world! My name is",
+    "description": "A results-driven B-Tech graduate with a strong passion for coding and a desire to embark on a challenging career.Proficient in HTML,CSS,Java,JSP,MariaDB,JDBC,and C,I aim to leverage my technical expertise to further enhance my skills and contribute effectively to the technology industry.",
+    "button": "Get in touch"
+  },
+  "about_me": {
+    "title": "About me",
+    "description": "Hi! My name is Aradhana, I am working as a JAVA developer. I'm recognized for finishing projects before the deadline, I'm also open to learning and adopting changes, something I believe is especially crucial in my profession as technology is constantly evolving.",
+    "sub_description": "These are some of the technologies I have been working with recently:",
+    "skills": [
+      "Angular",
+      "HTML and S(CSS)",
+      "Javascript, Typescript",
+      "JDBC CRUD operations",
+      "GitHub",
+      "MySql",
+      "JAVA",
+      "C Programming",
+      "Bootstrap",
+      "Service-Now"
+    ]
+  },
+  "experience": {
+    "title": "Where I Worked",
+    "jobs": [
+      {
+        "tab": "R4 Solutions Private Limited",
+        "title": "Technical Support Associate",
+        "date": "April 2023 - November 2023",
+        "description": [
+          "L1 Helpdesk IT support for foreign clients on Service-Now.",
+          "Installation and configuration of hardware and software.",
+          "Monitoring and maintenance of computer systems and networks."
+        ]
+      },
+      {
+        "tab": "Parmeters Software Private Limited",
+        "title": "Customer Relationship Co-Ordinator",
+        "date": "May 2022 - July 2022",
+        "description": [
+          "Customer relationship oversight.",
+          "Efficient customer complaint resolution."
+        ]
+      },
+      {
+        "tab": "LectureNotes",
+        "title": "Content Executive",
+        "date": "March 2021 - June 2022",
+        "description": [
+          "Intern at LectureNotes."
+           ]
+          }
+      
+    ]
+  },
+  "works": {
+    "title": "My Projects",
+    "projects": [
+      {
+        "title": "Project Title",
+        "description": "Here some description about the project",
+        "images": ["assets/img/", "assets/img/", "assets/img/"],
+        "technologies": ["Angular", "Signals", "Typescript"]
+      }
+    ]
+  }
+}

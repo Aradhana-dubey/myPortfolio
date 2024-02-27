@@ -1,0 +1,143 @@
+@import '../../../../assets/styles/colors';
+
+$menuHeight: 70px;
+$menuBreakpoint: 768px;
+
+#navbar {
+  height: $menuHeight;
+  background: $color-black-100;
+  box-shadow: 0px 2px 3px rgba(12, 12, 12, 0.5);
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  padding: 10px;
+
+  .navbar {
+    &__items {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      // gap: 48px;
+      cursor: pointer;
+    }
+
+    &__logo {
+      padding: 0 10px;
+    }
+
+    &__burger {
+      padding: 0 10px;
+      display: none;
+      cursor: pointer;
+
+      i {
+        color: $color-white-100;
+        line-height: $menuHeight;
+        transition: 0.3s ease;
+      }
+
+      @media (max-width: $menuBreakpoint) {
+        display: block;
+      }
+    }
+
+    &__menu {
+      display: flex;
+      align-items: center;
+
+      @media (max-width: $menuBreakpoint) {
+        display: none;
+
+        &.is-open {
+          display: block;
+          position: absolute;
+          top: #{$menuHeight + 2};
+          background: $color-black-100;
+          width: 100%;
+
+          .navbar__menu--item {
+            border-bottom: 1px solid $color-black-200;
+          }
+        }
+      }
+
+      &-buttons {
+        display: flex;
+        align-items: center;
+        gap: 48px;
+
+        &--language {
+          padding-right: 20px;
+        }
+
+        &--resume {
+          display: flex;
+          align-items: center;
+          gap: 8px;
+          border: 1px solid $color-indigo-500;
+          background: transparent;
+          color: #e6f1ff;
+          padding: 8px 20px;
+          border-radius: 5px;
+          cursor: pointer;
+
+          &:hover {
+            color: $color-indigo-900;
+            background-color: $color-indigo-300;
+          }
+
+          &--icon {
+            font-size: 1.2rem;
+          }
+        }
+
+        @media (max-width: $menuBreakpoint) {
+          // display: none;
+        }
+      }
+
+      &--item {
+        padding: 0 10px;
+        display: block;
+        text-transform: uppercase;
+        font-size: 0.8rem;
+        font-weight: 600;
+        color: $color-indigo-100;
+        position: relative;
+
+        &:after {
+          content: "";
+          display: block;
+          height: 2px;
+          width: 0px;
+          margin-top: 4px;
+          transition: 0.3s;
+          position: absolute;
+          border-radius: 5px;
+          background: $color-indigo-200;
+        }
+
+        &:hover:after {
+          width: 100%;
+        }
+
+        @media (max-width: $menuBreakpoint) {
+          line-height: $menuHeight;
+        }
+      }
+
+      &--index {
+        color: $color-indigo-200;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #navbar {
+    padding: 0px;
+  }
+
+  
+
+}
